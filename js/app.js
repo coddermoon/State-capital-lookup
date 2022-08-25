@@ -28,7 +28,7 @@ const outputHtml = matches =>{
         const html = matches.map(match=>`
         
         <div class="card card-body mb-1 mx-auto ">
-        <h4>${match.name} (${match.city}) <span class="text-primary">
+        <h4>${match.name}  <span class="text-primary">
         ${match.city}
         </span> </h4>
         <!-- <small>lat : ${match.lat}</small> -->
