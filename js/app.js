@@ -5,7 +5,7 @@ const  searchStates = async value=>{
 
     // fatch data
 
-   const res = await fetch('./../data/data.json')
+   const res = await fetch('https://cdn.jsdelivr.net/gh/coddermoon/State-capital-lookup/data/data.json')
    const states = await res.json()
  
 //   check match or not 
