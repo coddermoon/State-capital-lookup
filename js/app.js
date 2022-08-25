@@ -11,7 +11,7 @@ const  searchStates = async value=>{
 //   check match or not 
 let matches = states.filter(state=>{
     const regx =new RegExp(`^${value}`, 'gi')
-    return  state.name.match(regx)||state.abbr.match(regx)
+    return  state.name.match(regx)
    
 })
 if (value.length === 0) {
@@ -28,7 +28,7 @@ const outputHtml = matches =>{
         const html = matches.map(match=>`
         
         <div class="card card-body mb-1 mx-auto ">
-        <h4>${match.name} (${match.abbr}) <span class="text-primary">
+        <h4>${match.name} (${match.city}) <span class="text-primary">
         ${match.city}
         </span> </h4>
         <!-- <small>lat : ${match.lat}</small> -->
